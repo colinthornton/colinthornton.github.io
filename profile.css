@@ -1,0 +1,15 @@
+.sectionContent {
+	margin-top: 8em;
+}
+
+#projectsPage {
+	display: none;
+}
+
+#contactPage {
+	display: none;
+}
+
+#contactPage i.icon {
+	font-size: 1.5em;
+}
