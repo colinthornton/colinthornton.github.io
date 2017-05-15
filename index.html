@@ -5,24 +5,26 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"/>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="profile.css">
+	<link href="https://fonts.googleapis.com/css?family=Sirin+Stencil" rel="stylesheet"> 
 </head>
 <body>
 	
 <div class="ui secondary pointing menu">
 	<div class="ui container">
+		<header id="logo" class="header item">Colin Thornton</header>
 		<div class="right menu">
-			<a id="homeBtn" class="active disabled item">Home</a>
-			<a id="projectsBtn" class="item">Projects</a>
-			<a id="contactBtn" class="item">Contact</a>
+			<a id="homeBtn" href="#home" class="active disabled item">Home</a>
+			<a id="projectsBtn" href="#projects" class="item">Projects</a>
+			<a id="contactBtn" href="#contact" class="item">Contact</a>
 		</div>
 	</div>
 </div>
 
-<div id="homePage" class="ui container sectionContent">
+<div id="home" class="ui container sectionContent">
 	<div class="ui items">
 		<div class="item">
 			<div class="ui medium image">
-				<img src="face.jpg">
+				<img src="thumbnails/face.jpg">
 			</div>
 			<div class="middle aligned content">
 				<div class="description">
@@ -38,12 +40,12 @@
 	</div>
 </div>
 
-<div id="projectsPage" class="ui container sectionContent">
+<div id="projects" class="ui container sectionContent">
 	<div class="ui divided items">
 		
 		<div class="item">
 			<a href="https://colinthornton.github.io/pomodoro/" class="ui medium image">
-				<img src="pomodoro_thumb.png">
+				<img src="thumbnails/pomodoro_thumb.png">
 			</a>
 			<div class="content">
 				<a href="https://colinthornton.github.io/pomodoro/" class="header">
@@ -59,7 +61,7 @@
 
 		<div class="item">
 			<a href="https://colinthornton.github.io/wikipedia-searcher/" class="ui medium image">
-				<img src="wikipedia_thumb.png">
+				<img src="thumbnails/wikipedia_thumb.png">
 			</a>
 			<div class="content">
 				<a href="https://colinthornton.github.io/wikipedia-searcher/" class="header">
@@ -76,7 +78,7 @@
 	</div>
 </div>
 
-<div id="contactPage" class="ui container sectionContent">
+<div id="contact" class="ui container sectionContent">
 	<div class="ui center aligned segment">
 		<header class="ui header">
 			Contact Me

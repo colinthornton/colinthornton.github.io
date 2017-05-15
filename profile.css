@@ -2,14 +2,31 @@
 	margin-top: 8em;
 }
 
-#projectsPage {
+#logo {
+	font-family: 'Sirin Stencil';
+	font-size: 3em;
+	padding: 5px;
+	letter-spacing: 5px;
+	text-shadow: 1px -1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.body .ui.secondary.pointing.menu .active.item {
+	border-bottom-color: rgb(150, 10, 10);
+}
+
+#projects {
+	display: none;
+	font-size: 1.25em;
+}
+
+#projects .header {
+	font-size: 1.75em;
+}
+
+#contact {
 	display: none;
 }
 
-#contactPage {
-	display: none;
-}
-
-#contactPage i.icon {
+#contact i.icon {
 	font-size: 1.5em;
 }
