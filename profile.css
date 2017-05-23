@@ -10,6 +10,10 @@
 	text-shadow: 1px -1px 3px rgba(0, 0, 0, 0.5);
 }
 
+#profile {
+	font-size: 1.5em;
+}
+
 .body .ui.secondary.pointing.menu .active.item {
 	border-bottom-color: rgb(150, 10, 10);
 }
