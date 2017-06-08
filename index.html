@@ -74,21 +74,42 @@
 </div>
 
 <div id="contact" class="ui container sectionContent">
-	<div class="ui center aligned segment">
-		<header class="ui header">
-			Contact Me
-		</header>	
-		<a href="https://github.com/colinthornton" 
-						class="ui basic button">
-							<i class="github icon"></i>
-							GitHub
-		</a>
-		<a href="https://www.linkedin.com/in/colin-thornton-5666a9116/" 
-						class="ui basic button">
-							<i class="linkedin icon"></i>
-							LinkedIn
-		</a>
-	</div>
+	<!-- <div class="ui center aligned segment"> -->
+		<div id="myPages">
+			<header class="ui header">
+				My Pages
+			</header>	
+			<a href="https://github.com/colinthornton" 
+							class="ui basic button">
+								<i class="github icon"></i>
+								GitHub
+			</a>
+			<a href="https://www.linkedin.com/in/colin-thornton-5666a9116/" 
+							class="ui basic button">
+								<i class="linkedin icon"></i>
+								LinkedIn
+			</a>
+		</div>
+		<div class="ui divider">
+		<div id="contactMe">
+			<header class="ui header">
+				Contact Me
+			</header>
+			<form 
+				class="ui form" 
+				method="POST" 
+				action="https://formspree.io/colinthorntontx@gmail.com"
+			>
+				<div class="field">
+					<input type="text" name="email" placeholder="Your email" type="email">
+				</div>
+				<div class="field">
+					<textarea name="message" placeholder="Your message"></textarea>
+				</div>
+				<button class="ui button" type="submit">Send</button>
+			</form>
+		</div>
+	<!-- </div> -->
 </div>
 
 <script type="text/javascript" src="profile.js"></script>
