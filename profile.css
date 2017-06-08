@@ -1,5 +1,6 @@
 .sectionContent {
 	margin-top: 8em;
+	margin-bottom: 8em;
 }
 
 #logo {
@@ -19,7 +20,6 @@
 }
 
 #projects {
-	display: none;
 	font-size: 1.25em;
 }
 
@@ -28,7 +28,6 @@
 }
 
 #contact {
-	display: none;
 }
 
 #contact i.icon {
@@ -41,4 +40,19 @@
 
 #contactMe {
 	margin-top: 2em;
+}
+
+a.medium.image:hover {
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+div.ui.fluid.container {
+	height: 10em;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+#footerDiv {
+	height: 5em;
+	background: rgba(0, 0, 0, 0.3);
+
 }
