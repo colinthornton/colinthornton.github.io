@@ -19,25 +19,16 @@ function changePageTo(activeBtn){
 			$("#homeBtn").addClass("active disabled");
 			$("#projectsBtn").removeClass("active disabled");
 			$("#contactBtn").removeClass("active disabled");			
-			$("#projects").hide();
-			$("#contact").hide();
-			$("#home").fadeIn();
 			break;
 		case "projectsBtn":
 			$("#projectsBtn").addClass("active disabled");
 			$("#homeBtn").removeClass("active disabled");
-			$("#contactBtn").removeClass("active disabled");			
-			$("#home").hide();
-			$("#contact").hide();
-			$("#projects").fadeIn();
+			$("#contactBtn").removeClass("active disabled");
 			break;
 		case "contactBtn":
 			$("#contactBtn").addClass("active disabled");
 			$("#homeBtn").removeClass("active disabled");
-			$("#projectsBtn").removeClass("active disabled");			
-			$("#home").hide();
-			$("#projects").hide();
-			$("#contact").fadeIn();
+			$("#projectsBtn").removeClass("active disabled");	
 			break;
 	}
 }
