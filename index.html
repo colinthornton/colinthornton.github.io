@@ -8,19 +8,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Sirin+Stencil" rel="stylesheet"> 
 </head>
 <body>
-	
-<div class="ui secondary pointing menu">
+
+<span id="home">
+<div class="ui fixed secondary pointing menu" id="navbar">
 	<div class="ui container">
 		<header id="logo" class="header item">Colin Thornton</header>
 		<div class="right menu">
 			<a id="homeBtn" href="#home" class="active disabled item">Home</a>
-			<a id="projectsBtn" href="#projects" class="item">Projects</a>
-			<a id="contactBtn" href="#contact" class="item">Contact</a>
+			<a id="projectsBtn" href="#projectSection" class="item">Projects</a>
+			<a id="contactBtn" href="#contactSection" class="item">Contact</a>
 		</div>
 	</div>
 </div>
 
-<div id="home" class="ui container sectionContent">
+<div id="" class="ui container sectionContent">
 	<div class="ui items">
 		<div class="item">
 			<div class="ui medium image">
@@ -35,7 +36,7 @@
 	</div>
 </div>
 
-<div class="ui fluid container"></div>
+<div class="ui divider" id="projectSection"></div>
 
 <div id="projects" class="ui container sectionContent">
 	<div class="ui divided items">
@@ -49,9 +50,9 @@
 					Pomodoro Timer
 				</a>
 				<div class="description">
-					<p>A Free Code Camp project.</p>
+					<p>Choose your work and break time, and press start!</p>
 					<p>Main focus: animation and logic with jQuery</p>
-					<p>HTML/CSS/JavaScript/Bootstrap/jQuery</p>
+					<p>HTML / CSS / JavaScript / Bootstrap / jQuery</p>
 				</div>
 			</div>
 		</div>
@@ -65,9 +66,9 @@
 					Wikipedia Search
 				</a>
 				<div class="description">
-					<p>A Free Code Camp project.</p>
+					<p>Type your search query and press enter to access Wikipedia's search API</p>
 					<p>Main focus: fetching and displaying Wiki API calls</p>
-					<p>HTML/CSS/JavaScript/Bootstrap/jQuery</p>
+					<p>HTML / CSS / JavaScript / Bootstrap / jQuery</p>
 				</div>
 			</div>
 		</div>
@@ -75,53 +76,12 @@
 	</div>
 </div>
 
-<div class="ui fluid container"></div>
+<div class="ui divider" id="contactSection"></div>
 
 <div id="contact" class="ui container sectionContent">
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<!-- <div class="ui center aligned segment"> -->
-		<div id="myPages">
-			<header class="ui header">
-				My Pages
-			</header>	
-			<a href="https://github.com/colinthornton" 
-							class="ui basic button">
-								<i class="github icon"></i>
-								GitHub
-			</a>
-			<a href="https://www.linkedin.com/in/colin-thornton-5666a9116/" 
-							class="ui basic button">
-								<i class="linkedin icon"></i>
-								LinkedIn
-			</a>
-		</div>
-		<div class="ui divider"></div>
-		<div id="contactMe">
-			<header class="ui header">
-				Contact Me
-			</header>
-			<form 
-				class="ui form" 
-				method="POST" 
-				action="https://formspree.io/colinthorntontx@gmail.com"
-			>
-				<div class="field">
-					<input type="text" name="email" placeholder="Your email" type="email">
-				</div>
-				<div class="field">
-					<textarea name="message" placeholder="Your message"></textarea>
-				</div>
-				<button class="ui button" type="submit">Send</button>
-			</form>
-		</div>
-	<!-- </div> -->
-=======
-=======
->>>>>>> parent of 9cd0157... Added email form
-	<div class="ui center aligned segment">
+	<div id="myPages">
 		<header class="ui header">
-			Contact Me
+			My Pages
 		</header>	
 		<a href="https://github.com/colinthornton" 
 						class="ui basic button">
@@ -134,10 +94,25 @@
 							LinkedIn
 		</a>
 	</div>
-<<<<<<< HEAD
->>>>>>> parent of 9cd0157... Added email form
-=======
->>>>>>> parent of 9cd0157... Added email form
+	<div class="ui divider"></div>
+	<div id="contactMe">
+		<header class="ui header">
+			Contact Me
+		</header>
+		<form 
+			class="ui form" 
+			method="POST" 
+			action="https://formspree.io/colinthorntontx@gmail.com"
+		>
+			<div class="field">
+				<input type="text" name="email" placeholder="Your email" type="email">
+			</div>
+			<div class="field">
+				<textarea name="message" placeholder="Your message"></textarea>
+			</div>
+			<button class="ui button" type="submit">Send</button>
+		</form>
+	</div>	
 </div>
 
 <div id="footerDiv" class="ui fluid container"></div>

@@ -1,3 +1,7 @@
+body {
+	padding-top: 54px;
+}
+
 .sectionContent {
 	margin-top: 8em;
 	margin-bottom: 8em;
@@ -13,6 +17,10 @@
 
 #profile {
 	font-size: 1.5em;
+}
+
+#navbar {
+	background-color: white;
 }
 
 .body .ui.secondary.pointing.menu .active.item {
@@ -32,8 +40,6 @@
 
 #contact i.icon {
 	font-size: 1.5em;
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 
 #myPages {
@@ -54,11 +60,6 @@ div.ui.fluid.container {
 }
 
 #footerDiv {
-	height: 5em;
-	background: rgba(0, 0, 0, 0.3);
-
-=======
->>>>>>> parent of 9cd0157... Added email form
-=======
->>>>>>> parent of 9cd0157... Added email form
+	height: 10px;
+	background: skyblue;
 }
