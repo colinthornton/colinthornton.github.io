@@ -14,7 +14,7 @@
 	<div class="ui container">
 		<header id="logo" class="header item">Colin Thornton</header>
 		<div class="right menu">
-			<a id="homeBtn" href="#home" class="active disabled item">Home</a>
+			<a id="homeBtn" href="#home" class="item">Home</a>
 			<a id="projectsBtn" href="#projectSection" class="item">Projects</a>
 			<a id="contactBtn" href="#contactSection" class="item">Contact</a>
 		</div>
@@ -29,7 +29,7 @@
 			</div>
 			<div class="middle aligned content">
 				<div class="description">
-					<p id="profile">Thanks for visiting my portfolio.  I'm an American living in Tokyo.  Currently I'm an English teacher looking to make the switch into web development.  Please have a look at my projects, and enjoy!</p>
+					<p id="profile">Thanks for visiting my portfolio. I'm a web developer living in Tokyo. Please have a look at my projects, and enjoy!</p>
 				</div>
 			</div>
 		</div>
@@ -42,33 +42,81 @@
 	<div class="ui divided items">
 		
 		<div class="item">
-			<a href="https://colinthornton.github.io/pomodoro/" class="ui medium image">
-				<img src="thumbnails/pomodoro_thumb.png">
+			<a href="https://colinthornton.github.io/wikipedia-searcher/" 
+			   target="_blank" 
+			   class="ui medium image">
+				<img src="thumbnails/wikipedia_thumb.png">
 			</a>
 			<div class="content">
-				<a href="https://colinthornton.github.io/pomodoro/" class="header">
-					Pomodoro Timer
+				<a href="https://colinthornton.github.io/wikipedia-searcher/" 
+				   target="_blank" 
+				   class="header">
+					Wikipedia Search
 				</a>
 				<div class="description">
-					<p>Choose your work and break time, and press start!</p>
-					<p>Main focus: animation and logic with jQuery</p>
-					<p>HTML / CSS / JavaScript / Bootstrap / jQuery</p>
+					<p>Type your search query and press enter to search Wikipedia</p>
+					<p>Main focus: fetching and displaying JSONs from the Wiki API</p>
+					<p>JSON / jQuery / Bootstrap</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="item">
-			<a href="https://colinthornton.github.io/wikipedia-searcher/" class="ui medium image">
-				<img src="thumbnails/wikipedia_thumb.png">
+			<a href="https://colinthornton.github.io/pomodoro/" 
+				 target="_blank" 
+			   class="ui medium image">
+				<img src="thumbnails/pomodoro_thumb.png">
 			</a>
 			<div class="content">
-				<a href="https://colinthornton.github.io/wikipedia-searcher/" class="header">
-					Wikipedia Search
+				<a href="https://colinthornton.github.io/pomodoro/" 
+				   target="_blank" 
+			     class="header">
+					Pomodoro Timer
 				</a>
 				<div class="description">
-					<p>Type your search query and press enter to access Wikipedia's search API</p>
-					<p>Main focus: fetching and displaying Wiki API calls</p>
-					<p>HTML / CSS / JavaScript / Bootstrap / jQuery</p>
+					<p>Choose your work and break time, and press start!</p>
+					<p>Main focus: animation and logic with jQuery</p>
+					<p>jQuery / Bootstrap</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<a href="https://colinthornton.github.io/markdown-preview/" 
+				 target="_blank" 
+				 class="ui medium image">
+				<img src="thumbnails/markdown_thumb.png">
+			</a>
+			<div class="content">
+				<a href="https://colinthornton.github.io/markdown-preview/" 
+				   target="_blank" 
+				   class="header">
+					GitHub Markdown Preview
+				</a>
+				<div class="description">
+					<p>Edit your markdown and see your changes immediately.</p>
+					<p>Main focus: Learning React.js</p>
+					<p>React / Bootstrap</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<a href="https://github.com/colinthornton/kanji-dictionary" 
+				 target="_blank" 
+				 class="ui medium image">
+				<img src="thumbnails/kanji_thumb.png">
+			</a>
+			<div class="content">
+				<a href="https://github.com/colinthornton/kanji-dictionary" 
+				   target="_blank" 
+				   class="header">
+					Kanji Dictionary (Source Code Only)
+				</a>
+				<div class="description">
+					<p>A RESTful app that stores kanji flashcards.</p>
+					<p>Main focus: RESTful routing and CRUD fundamentals</p>
+					<p>MongoDB / Express / Semantic UI</p>
 				</div>
 			</div>
 		</div>
@@ -84,14 +132,12 @@
 			My Pages
 		</header>	
 		<a href="https://github.com/colinthornton" 
-						class="ui basic button">
-							<i class="github icon"></i>
-							GitHub
+			 class="ui basic violet button">
+			  <i class="github icon"></i>GitHub
 		</a>
 		<a href="https://www.linkedin.com/in/colin-thornton-5666a9116/" 
-						class="ui basic button">
-							<i class="linkedin icon"></i>
-							LinkedIn
+			 class="ui basic blue button">
+				<i class="linkedin icon"></i>LinkedIn
 		</a>
 	</div>
 	<div class="ui divider"></div>
@@ -102,8 +148,7 @@
 		<form 
 			class="ui form" 
 			method="POST" 
-			action="https://formspree.io/colinthorntontx@gmail.com"
-		>
+			action="https://formspree.io/colinthorntontx@gmail.com">
 			<div class="field">
 				<input type="text" name="email" placeholder="Your email" type="email">
 			</div>
@@ -114,10 +159,6 @@
 		</form>
 	</div>	
 </div>
-
-<div id="footerDiv" class="ui fluid container"></div>
-
-<script type="text/javascript" src="profile.js"></script>
 
 </body>
 </html>

@@ -12,54 +12,36 @@ body {
 	font-size: 3em;
 	padding: 5px;
 	letter-spacing: 5px;
-	text-shadow: 1px -1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#navbar {
+	background-color: rgb(245, 245, 245);
 }
 
 #profile {
 	font-size: 1.5em;
 }
 
-#navbar {
-	background-color: white;
-}
-
-.body .ui.secondary.pointing.menu .active.item {
-	border-bottom-color: rgb(150, 10, 10);
-}
-
 #projects {
 	font-size: 1.25em;
 }
 
-#projects .header {
-	font-size: 1.75em;
+a.medium.image {
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
 }
 
-#contact {
-}
-
-#contact i.icon {
-	font-size: 1.5em;
+a.medium.image:hover {
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 #myPages {
 	margin-bottom: 2em;
 }
 
+#myPages i.icon {
+	font-size: 1.5em;
+}
+
 #contactMe {
 	margin-top: 2em;
-}
-
-a.medium.image:hover {
-	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
-}
-
-div.ui.fluid.container {
-	height: 10em;
-	background: rgba(0, 0, 0, 0.3);
-}
-
-#footerDiv {
-	height: 10px;
-	background: skyblue;
 }
