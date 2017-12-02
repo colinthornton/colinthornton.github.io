@@ -1,5 +1,6 @@
 body {
 	padding-top: 52px;
+	min-width: 600px;
 }
 
 .sectionContent {
@@ -16,6 +17,7 @@ body {
 
 #navbar {
 	background-color: rgb(245, 245, 245);
+	min-width: 600px;
 }
 
 #navbar .right.menu .item:hover {
