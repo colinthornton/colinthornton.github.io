@@ -2,26 +2,32 @@
 <html>
 <head>
 	<title>Colin Thornton</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"/>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<link rel="stylesheet" href="profile.css">
 	<link href="https://fonts.googleapis.com/css?family=Sirin+Stencil" rel="stylesheet">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 
 <span id="home">
-<div class="ui fixed secondary pointing menu" id="navbar">
-	<div class="ui container">
-		<header id="logo" class="header item">Colin Thornton</header>
-		<div class="right menu">
-			<a id="homeBtn" href="#home" class="item">Home</a>
-			<a id="projectsBtn" href="#projectSection" class="item">Projects</a>
-			<a id="contactBtn" href="#contactSection" class="item">Contact</a>
-		</div>
+<nav>
+	<div class="container">
+		<div class="nav-wrapper">
+	  	<a href="#" class="brand-logo">Colin Thornton</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+	      <li><a href="#home">Home</a></li>
+	      <li><a href="#projectSection">Projects</a></li>
+	      <li><a href="#contactSection">Contact</a></li>
+	    </ul>
+	  </div>
 	</div>
-</div>
+</nav>
 
-<div id="profile" class="ui container sectionContent">
+<!-- <div id="profile" class="ui container sectionContent">
 	<div class="ui items">
 		<div class="item">
 			<div class="ui medium image">
@@ -34,11 +40,35 @@
 			</div>
 		</div>
 	</div>
+</div>-->
+
+
+
+<div class="divider" id="projectSection"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="./thumbnails/wikipedia_thumb.png">
+          <span class="card-title">Wikipedia Search</span>
+        </div>
+        <div class="card-content">
+					<p>Type your search query and press enter to search Wikipedia</p>
+					<p>Main focus: fetching and displaying JSONs from the Wiki API</p>
+					<p>JSON / jQuery / Bootstrap</p>
+        </div>
+        <div class="card-action">
+          <a href="https://colinthornton.github.io/wikipedia-searcher/">View App</a>
+          <a href="https://github.com/colinthornton/wikipedia-searcher">View Code</a>
+        </div>
+      </div>
+    </div>
+	</div>
 </div>
 
-<div class="ui divider" id="projectSection"></div>
-
-<div id="projects" class="ui container sectionContent">
+<!-- <div id="projects" class="ui container sectionContent">
 	<div class="ui divided items">
 
 		<div class="item">
@@ -180,7 +210,9 @@
 			<button class="ui button" type="submit">Send</button>
 		</form>
 	</div>
-</div>
+</div> -->
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
 </html>
