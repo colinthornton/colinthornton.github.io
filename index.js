@@ -7,6 +7,9 @@ $( document ).ready(function() {
   $(".side-nav a").click(function() {
     $(".button-collapse").sideNav("hide");
   });
+  $(".card-reveal").click(function(e) {
+    $("")
+  })
   setInterval(rotateCarousel, 5000);
 });
 
