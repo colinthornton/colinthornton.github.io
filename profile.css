@@ -41,3 +41,7 @@ body {
 .icons i {
   font-size: 5em;
 }
+
+form {
+  margin-top: 1.5em;
+}
