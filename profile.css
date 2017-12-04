@@ -1,3 +1,11 @@
+.brand-logo {
+  font-family: 'Sirin Stencil';
+}
+
+.divider {
+  margin-bottom: 3em;
+}
+
 .icons i {
   font-size: 5em;
 }

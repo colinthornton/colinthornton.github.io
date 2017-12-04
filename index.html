@@ -13,13 +13,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 <span id="home">
 <nav>
 	<div class="container">
 		<div class="nav-wrapper">
 	  	<a href="#" class="brand-logo">Colin Thornton</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+	      <li><a href="#home">Home</a></li>
+	      <li><a href="#projectSection">Projects</a></li>
+	      <li><a href="#contactSection">Contact</a></li>
+	    </ul>
+			<ul class="side-nav" id="mobile-nav">
 	      <li><a href="#home">Home</a></li>
 	      <li><a href="#projectSection">Projects</a></li>
 	      <li><a href="#contactSection">Contact</a></li>
@@ -79,7 +87,7 @@
           <img class="activator" src="./thumbnails/tictactoe_thumb.png">
         </div>
         <div class="card-content">
-					<span class="card-title activator">Tic-Tac-Toe</span>
+					<span class="card-title activator">Tic-Tac-Toe<i class="material-icons right">more_vert</i></span>
 				</div>
 				<div class="card-reveal">
 					<span class="card-title">Tic-Tac-Toe<i class="material-icons right">close</i></span>
@@ -173,6 +181,29 @@
 </div>
 
 <div class="divider" id="contactSection"></div>
+
+<div class="container">
+	<div class="row">
+		<form class="col s12" method="POST" action="https://formspree.io/colinthorntontx@gmail.com">
+			<div class="row">
+				<div class="input-field col s12 m6 l4">
+					<input placeholder="someone@example.com" id="email" type="email" class="validate">
+		    	<label for="email">Email</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12 m10 l8">
+					<textarea id="textarea" class="materialize-textarea"></textarea>
+		    	<label for="textarea">Message</label>
+				</div>
+			</div>
+			  <button class="btn waves-effect waves-light" type="submit">Send
+			    <i class="material-icons right">send</i>
+			  </button>
+			</div>
+		</form>
+	</div>
+</div>
 <!--
 
 <div class="ui divider" id="contactSection"></div>
@@ -213,7 +244,6 @@
 	</div>
 </div> -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>
