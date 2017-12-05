@@ -1,58 +1,76 @@
 body {
-	padding-top: 52px;
-	min-width: 600px;
+  background: #fafafa;
 }
 
-.sectionContent {
-	margin-top: 8em;
-	margin-bottom: 8em;
+.navbar-fixed {
+  z-index: 998;
 }
 
-#logo {
-	font-family: 'Sirin Stencil';
-	font-size: 3em;
-	padding: 5px;
-	letter-spacing: 5px;
+.brand-logo {
+  font-family: 'Exo';
 }
 
-#navbar {
-	background-color: rgb(245, 245, 245);
-	min-width: 600px;
+@media screen and (max-width: 450px) {
+  .nav-wrapper .brand-logo {
+    font-size: 1.76em;
+  }
 }
 
-#navbar .right.menu .item:hover {
-	color: black;
-	border-bottom-color: black;
+@media screen and (max-width: 375px) {
+  .nav-wrapper .brand-logo {
+    font-size: 1.298em;
+  }
 }
 
-#profile {
-	font-size: 1.5em;
+#backdrop {
+  width: 100%;
+  height: 30em;
+  background-image: url('./thumbnails/mountain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
 }
 
-#projects {
-	font-size: 1.25em;
+@media screen and (max-width: 1200px) {
+  #backdrop {
+    height: 20em;
+  }
 }
 
-#projects .header {
-	font-size: 1.4em;
+@media screen and (max-width: 600px) {
+  #backdrop {
+    height: 15em;
+  }
 }
 
-a.medium.image {
-	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+#backdrop .card-panel {
+  background-color: rgba(250, 250, 250, 0.9);
 }
 
-a.medium.image:hover {
-	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+.carousel {
+  max-height: 300px;
 }
 
-#myPages {
-	margin-bottom: 2em;
+.divider {
+  margin-bottom: 3em;
 }
 
-#myPages i.icon {
-	font-size: 1.5em;
+.card .card-content {
+  padding: .5em 2em;
 }
 
-#contactMe {
-	margin-top: 2em;
+.card .card-content .card-title {
+  margin: 0;
+}
+
+.card .card-reveal .card-title {
+  margin-bottom: 1.5em;
+}
+
+.icons i {
+  font-size: 5em;
+}
+
+form {
+  margin-top: 1.5em;
 }
