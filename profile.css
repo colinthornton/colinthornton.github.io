@@ -3,7 +3,7 @@ body {
 }
 
 .navbar-fixed {
-  margin-bottom: 3em;
+  z-index: 998;
 }
 
 .brand-logo {
@@ -20,6 +20,31 @@ body {
   .nav-wrapper .brand-logo {
     font-size: 1.298em;
   }
+}
+
+#backdrop {
+  width: 100%;
+  height: 30em;
+  background-image: url('./thumbnails/mountain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+@media screen and (max-width: 1200px) {
+  #backdrop {
+    height: 20em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #backdrop {
+    height: 15em;
+  }
+}
+
+#backdrop .card-panel {
+  background-color: rgba(250, 250, 250, 0.9);
 }
 
 .carousel {

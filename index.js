@@ -1,7 +1,6 @@
 $( document ).ready(function() {
-  $(".button-collapse").sideNav();
-  $(".side-nav a").click(function() {
-    $(".button-collapse").sideNav("hide");
+  $(".button-collapse").sideNav({
+    closeOnClick: true
   });
 
   $('.carousel').carousel({
