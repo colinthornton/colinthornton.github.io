@@ -22,6 +22,10 @@ body {
   }
 }
 
+.carousel {
+  max-height: 300px;
+}
+
 .divider {
   margin-bottom: 3em;
 }
