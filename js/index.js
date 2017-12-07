@@ -1,0 +1,1 @@
+function rotateCarousel(){$(".carousel").carousel("next",2)}$(document).ready(function(){$(".button-collapse").sideNav({closeOnClick:!0}),$(".carousel").carousel({duration:600,shift:50}),setInterval(rotateCarousel,5e3)});
