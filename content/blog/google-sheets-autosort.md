@@ -16,14 +16,15 @@ Luckily Google provides us with a pretty [rich API](https://developers.google.co
 Here's the script I came up with for my problem, which sorts my sheet in the manner and order specified in `SORT_ORDER` after editing any cell:
 
 ```javascript
-SHEET_NAME = "Sheet1";
-SORT_DATA_RANGE = "A2:F999";
-SORT_ORDER = [
-  { column: 2, ascending: true }, // Applied
-  { column: 3, ascending: true }, // Response
-  { column: 4, ascending: true }, // Interview
-  { column: 5, ascending: true }, // Offer
-  { column: 6, ascending: true }, // Rejected
+const SHEET_NAME = "Sheet1";
+const SORT_DATA_RANGE = "A2:L";
+const SORT_ORDER = [
+  { column: 7, ascending: true }, // Application
+  { column: 8, ascending: true }, // Response
+  { column: 9, ascending: true }, // Screening
+  { column: 10, ascending: true }, // Interview
+  { column: 11, ascending: true }, // Offer
+  { column: 12, ascending: true }, // Rejected
 ];
 
 function onEdit(e) {
@@ -31,9 +32,9 @@ function onEdit(e) {
 }
 
 function multiSortColumns() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName(SHEET_NAME);
-  var range = sheet.getRange(SORT_DATA_RANGE);
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = ss.getSheetByName(SHEET_NAME);
+  const range = sheet.getRange(SORT_DATA_RANGE);
   SORT_ORDER.forEach(function (sortOrder) {
     range.sort(sortOrder);
   });
