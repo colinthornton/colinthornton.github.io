@@ -7,14 +7,14 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create projects page
   const projectsPage = path.resolve(`./src/pages/projects/index.js`);
   createPage({
-    path: "projects",
+    path: "/projects/",
     component: projectsPage,
   });
 
   // Create blog page
   const blogPage = path.resolve("./src/pages/blog/index.js");
   createPage({
-    path: "blog",
+    path: "/blog/",
     component: blogPage,
   });
 
@@ -48,8 +48,6 @@ exports.createPages = async ({ graphql, actions }) => {
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;
     const next = index === 0 ? null : posts[index - 1].node;
-
-    console.log({ previous, next });
 
     createPage({
       path: `/blog${post.node.fields.slug}`,
