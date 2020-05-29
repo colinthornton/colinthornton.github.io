@@ -1,6 +1,6 @@
 ---
 title: "World Wide Waste"
-date: "2020-05-29"
+date: "2020-05-29T11:41:30+09:00"
 description: "Reviewing the key points from Gerry McGovern's book"
 ---
 
