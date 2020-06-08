@@ -58,5 +58,12 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: [{ regex: "^/blog/.+" }],
+        color: "darkcyan",
+      },
+    },
   ],
 };
